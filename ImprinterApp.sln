@@ -3,11 +3,46 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Imprint_Core", "Imprint_Core", "{7422DE17-5D35-4665-AC97-4C36FA476E45}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HostApp", "HostApp", "{2D14ED1B-E2D1-489F-8C40-7E81E53CE52F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{B4B91DA2-DC8A-4577-8C99-CF04A54D8FDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PluginAgreement", "PluginAgreement", "{FEB4605F-2128-4B88-BDC6-5E14A37E8AF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{939C1916-EF95-48B0-9486-50A711A47237}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tApp", "HostApp\tApp\tApp.csproj", "{473E9267-AA79-40F3-82EF-23907B6EE59E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPluginA", "Plugins\TestPluginA\TestPluginA.csproj", "{2B5097F6-C5DD-482F-86F4-DCA8820F303D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_Core", "PluginAgreement\Plugin_Core\Plugin_Core.csproj", "{73A2C1C9-1872-4416-87D5-BDD14CAD5F0F}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{473E9267-AA79-40F3-82EF-23907B6EE59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473E9267-AA79-40F3-82EF-23907B6EE59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473E9267-AA79-40F3-82EF-23907B6EE59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473E9267-AA79-40F3-82EF-23907B6EE59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5097F6-C5DD-482F-86F4-DCA8820F303D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5097F6-C5DD-482F-86F4-DCA8820F303D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5097F6-C5DD-482F-86F4-DCA8820F303D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5097F6-C5DD-482F-86F4-DCA8820F303D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A2C1C9-1872-4416-87D5-BDD14CAD5F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A2C1C9-1872-4416-87D5-BDD14CAD5F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A2C1C9-1872-4416-87D5-BDD14CAD5F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A2C1C9-1872-4416-87D5-BDD14CAD5F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{473E9267-AA79-40F3-82EF-23907B6EE59E} = {2D14ED1B-E2D1-489F-8C40-7E81E53CE52F}
+		{2B5097F6-C5DD-482F-86F4-DCA8820F303D} = {B4B91DA2-DC8A-4577-8C99-CF04A54D8FDE}
+		{73A2C1C9-1872-4416-87D5-BDD14CAD5F0F} = {FEB4605F-2128-4B88-BDC6-5E14A37E8AF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E97B804F-26B0-4168-9643-4B7B49EB78FB}
